@@ -77,6 +77,25 @@ body.engasgos-page { font-family:'Poppins', system-ui, -apple-system, 'Segoe UI'
   .engasgos-page .container { padding:16px; }
 }
 
+/* ===== MODO PAISAGEM (LANDSCAPE) ===== */
+@media (orientation: landscape) and (max-height: 600px) {
+  .engasgos-page .container { padding: 12px; }
+  .engasgo-images { gap: 15px; margin-top: 5px; }
+  .engasgo-img-wrapper { flex: 1 1 45%; }
+  .hero-img { max-width: 85vh; max-height: 75vh; }
+  .instructions-card { padding: 12px; margin-top: 8px; }
+  .demo-notes { padding: 8px; }
+}
+
+@media (orientation: landscape) and (min-height: 600px) {
+  .hero-img { max-width: 80vh; max-height: 70vh; }
+}
+
+@media (orientation: landscape) {
+  .page-header h2 { font-size: 1.2rem; }
+  .actions { margin-top: 8px; }
+}
+
 @media (max-width:700px) {
   .actions { justify-content:center; }
   .engasgo-images { gap:14px; }

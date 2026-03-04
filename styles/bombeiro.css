@@ -68,3 +68,14 @@
   .bombeiro-page .container { padding: 12px; }
   .bombeiro-page .btn { padding: 10px 12px; font-size: 0.95rem; }
 }
+
+/* ===== MODO PAISAGEM (LANDSCAPE) ===== */
+@media (orientation: landscape) and (max-height: 700px) {
+  .bombeiro-page .container { max-width: 100%; padding: 12px; }
+  .bombeiro-page .card { padding: 12px; margin-bottom: 10px; }
+  .bombeiro-page .card h3 { margin-top: 6px; }
+}
+
+@media (orientation: landscape) {
+  .bombeiro-page h2 { font-size: 1.2rem; margin-bottom: 10px; }
+}

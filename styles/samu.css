@@ -71,3 +71,19 @@ body.samu-page { font-family:'Poppins', system-ui, -apple-system, 'Segoe UI', Ro
 @media (max-width:420px) {
   .btn { padding:10px 12px; font-size:0.95rem; }
 }
+
+/* ===== MODO PAISAGEM (LANDSCAPE) ===== */
+@media (orientation: landscape) and (max-height: 600px) {
+  .samu-page .container { padding: 12px; }
+  .hero-img { max-width: 90vh; max-height: 80vh; }
+  .instructions-card { padding: 12px; margin-top: 8px; }
+  .actions { margin-top: 8px; }
+}
+
+@media (orientation: landscape) and (min-height: 600px) {
+  .hero-img { max-width: 85vh; max-height: 75vh; }
+}
+
+@media (orientation: landscape) {
+  .page-header h2 { font-size: 1.2rem; }
+}

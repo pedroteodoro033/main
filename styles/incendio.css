@@ -33,3 +33,20 @@ body.incendio-page { font-family:'Poppins', system-ui, -apple-system, 'Segoe UI'
 @media (max-width:420px) {
   .btn { padding:10px 12px; font-size:0.95rem; }
 }
+
+/* ===== MODO PAISAGEM (LANDSCAPE) ===== */
+@media (orientation: landscape) and (max-height: 600px) {
+  .incendio-page .container { padding: 15px; }
+  .hero-img { max-width: 90vh; max-height: 85vh; }
+  .instructions-card { padding: 15px; margin-top: 10px; }
+  .actions { margin-top: 10px; }
+}
+
+@media (orientation: landscape) and (min-height: 600px) {
+  .hero-img { max-width: 85vh; max-height: 80vh; }
+}
+
+@media (orientation: landscape) {
+  .page-header { margin-bottom: 8px; }
+  .page-header h2 { font-size: 1.3rem; }
+}

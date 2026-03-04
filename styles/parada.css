@@ -109,3 +109,21 @@ iframe.hero-img {
   .parada-page .container { padding:12px; }
   .btn { padding:10px 12px; font-size:0.95rem; }
 }
+
+/* ===== MODO PAISAGEM (LANDSCAPE) ===== */
+@media (orientation: landscape) and (max-height: 700px) {
+  .parada-page .container { padding: 12px; }
+  .parada-images { gap: 20px; margin-top: 10px; }
+  .parada-img-wrapper { flex: 1 1 45%; }
+  .hero-img { max-width: 90vh; max-height: 80vh; }
+  .instructions-card { padding: 15px; margin-top: 10px; }
+}
+
+@media (orientation: landscape) and (min-height: 700px) {
+  .hero-img { max-width: 85vh; max-height: 75vh; }
+}
+
+@media (orientation: landscape) {
+  .page-header h2 { font-size: 1.3rem; }
+  .actions { margin-top: 10px; }
+}

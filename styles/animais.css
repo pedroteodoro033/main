@@ -99,6 +99,27 @@ body.animais-page {
     .actions { justify-content:center; }
 }
 
+/* ===== MODO PAISAGEM (LANDSCAPE) ===== */
+@media (orientation: landscape) and (max-height: 700px) {
+  .animais-page .container { padding: 12px; }
+  .animais-grid { grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 100%; }
+  .animais-illustration { max-width: 100%; height: auto; }
+  .instructions-card { padding: 12px; margin-top: 8px; }
+}
+
+@media (orientation: landscape) and (min-height: 700px) and (max-height: 1000px) {
+  .animais-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+}
+
+@media (orientation: landscape) and (min-height: 1000px) {
+  .animais-grid { grid-template-columns: repeat(4, 1fr); gap: 25px; }
+  .animais-illustration { max-width: 100%; }
+}
+
+@media (orientation: landscape) {
+  .page-header h2 { font-size: 1.2rem; margin-bottom: 8px; }
+}
+
 @media (max-width:420px) {
     .animais-page .container { padding:12px; }
     .animais-illustration { max-width:100%; }

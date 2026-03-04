@@ -32,3 +32,13 @@
 @media(max-width:600px){
   .policia-page .container{padding:12px}
 }
+
+/* ===== MODO PAISAGEM (LANDSCAPE) ===== */
+@media (orientation: landscape) and (max-height: 700px) {
+  .policia-page .container { max-width: 100%; padding: 12px; }
+  .policia-page .card { padding: 12px; margin-bottom: 10px; }
+}
+
+@media (orientation: landscape) {
+  .policia-page h2 { font-size: 1.2rem; margin-bottom: 10px; }
+}

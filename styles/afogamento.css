@@ -33,6 +33,23 @@ body.afogamento-page { font-family:'Poppins', system-ui, -apple-system, 'Segoe U
   .btn { padding:10px 12px; font-size:0.95rem; }
 }
 
+/* ===== MODO PAISAGEM (LANDSCAPE) ===== */
+@media (orientation: landscape) and (max-height: 600px) {
+  .afogamento-page .container { padding: 12px; }
+  .image-block { margin: 8px 0 5px; }
+  .hero-img { max-width: 90vh; max-height: 80vh; }
+  .instructions-card { padding: 12px; margin-top: 8px; }
+  .actions { margin-top: 8px; }
+}
+
+@media (orientation: landscape) and (min-height: 600px) {
+  .hero-img { max-width: 85vh; max-height: 75vh; }
+}
+
+@media (orientation: landscape) {
+  .page-header h2 { font-size: 1.2rem; }
+}
+
 /* Modal de ampliação de imagens (copiado de animais.css) */
 .modal {
   display: none; /* Escondido por padrão */
