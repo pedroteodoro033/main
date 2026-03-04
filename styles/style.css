@@ -154,11 +154,8 @@ header {
 .modal-content {
   margin: auto;
   display: block;
-  width: 90%;
-  max-width: 1200px;
-  max-height: 75vh;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  width: 75%;
+  max-width: 800px;
   border-radius: 10px;
   animation: zoom 0.3s;
 }
@@ -166,16 +163,6 @@ header {
 @keyframes zoom {
   from {transform: scale(0)} 
   to {transform: scale(1)}
-}
-
-/* Estilo para iframes ampliados (vídeos YouTube) */
-.modal iframe {
-  width: 90%;
-  max-width: 1200px;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  margin: auto;
-  border-radius: 10px;
 }
 
 .close {
@@ -305,22 +292,4 @@ h2 {
 .zoomable-image:hover .zoom-overlay {
   opacity: 1;
   pointer-events: auto;
-}
-
-/* Responsivo: Ajustar modal em telas menores */
-@media (max-width: 768px) {
-  .modal-content {
-    width: 95%;
-    max-width: 100%;
-    max-height: 60vh;
-  }
-  
-  .modal iframe {
-    width: 95%;
-    max-width: 100%;
-  }
-  
-  .modal {
-    padding-top: 20px;
-  }
 }
