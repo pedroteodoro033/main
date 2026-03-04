@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 			el.onclick = function() {
 				// abre modal
-				modal.style.display = "block";
+				modal.style.display = "flex";
 				// remove iframe antigo se existir
 				const oldIframe = document.getElementById('imgExpandedIframe');
 				if (oldIframe) oldIframe.remove();
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// Fecha o modal ao clicar em qualquer lugar fora da imagem
 		modal.onclick = function(event) {
-			if (event.target !== modalImg) {
+			if (event.target == modal || (event.target !== modalImg && !event.target.closest('.modal-content') && !event.target.closest('iframe'))) {
 				const oldIframe = document.getElementById('imgExpandedIframe');
 				if (oldIframe) oldIframe.remove();
 				modal.style.display = "none";
