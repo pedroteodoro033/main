@@ -115,6 +115,10 @@ document.addEventListener('DOMContentLoaded', () => {
 				const oldIframe = document.getElementById('imgExpandedIframe');
 				if (oldIframe) oldIframe.remove();
 
+				// Verifica se é página de afogamento E se é dispositivo móvel (largura <= 768px)
+				const isAfogamento = document.body.classList.contains('afogamento-page');
+				const isMobile = window.innerWidth <= 768;
+
 				if (this.tagName === 'IFRAME') {
 					// esconder a tag img e criar um iframe dentro do modal
 					modalImg.style.display = 'none';
@@ -134,6 +138,17 @@ document.addEventListener('DOMContentLoaded', () => {
 					modalImg.style.display = 'block';
 					modalImg.src = this.src;
 					captionText.innerHTML = this.alt || '';
+					
+					// Aplicar rotação se for página de afogamento E for dispositivo móvel
+					if (isAfogamento && isMobile) {
+						modalImg.style.transform = 'rotate(90deg)';
+						// Forçar recalculação de altura/largura para imagem rotacionada
+						setTimeout(() => {
+							modal.scrollTop = 0;
+						}, 50);
+					} else {
+						modalImg.style.transform = 'rotate(0deg)';
+					}
 				}
 			}
 		});

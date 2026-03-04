@@ -33,6 +33,12 @@ body.afogamento-page { font-family:'Poppins', system-ui, -apple-system, 'Segoe U
   .btn { padding:10px 12px; font-size:0.95rem; }
 }
 
+/* Rotação de imagem no modal para afogamento */
+.afogamento-page #imgExpanded {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+}
+
 /* ===== MODO PAISAGEM (LANDSCAPE) ===== */
 @media (orientation: landscape) and (max-height: 600px) {
   .afogamento-page .container { padding: 12px; }

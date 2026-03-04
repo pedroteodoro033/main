@@ -171,6 +171,8 @@ header {
   border-radius: 10px;
   animation: zoom 0.3s;
   object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
 }
 
 @media (min-width: 768px) {
