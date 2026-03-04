@@ -1,0 +1,34 @@
+/* Styles specific to policia.html */
+
+.policia-page, .policia-page body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.policia-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.policia-page h2{
+  color: #c41e1e; /* igual às demais páginas (queimadura/incêndio) */
+  margin-bottom: 12px;
+}
+
+.policia-page .card{
+  background: linear-gradient(180deg,#fff 0%, #f6fbff 100%);
+  border-left: 6px solid #0a6abf;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.policia-page .card h3{margin-top:8px}
+
+.policia-page .btn{padding:8px 14px;border-radius:8px;border:0;cursor:pointer}
+.policia-page .btn-primary{background:#0a6abf;color:#fff;text-decoration:none}
+
+.policia-page .site-footer{margin-top:28px;padding:12px 0;text-align:center}
+
+@media(max-width:600px){
+  .policia-page .container{padding:12px}
+}

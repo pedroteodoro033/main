@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Animais Peçonhentos — Click Salve</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/animais.css">
+</head>
+
+
+<body class="animais-page">
+  <header class="header">
+        <div class="header-item">
+            <img src="../paginas do layout/saude.jpg" alt="Logo Click Salve">
+            <h1>CLIQUE SALVE</h1>
+        </div>
+
+        <div class="header-item">
+            <img src="../paginas do layout/emergencia.png" alt="Ligue Agora">
+            <h1>LIGUE AGORA</h1>
+        </div>
+
+    </header>
+    <main>
+      <div class="container">
+        <header class="page-header">
+          <h2>Animais Peçonhentos</h2>
+        </header>
+
+        <div class="animais-grid">
+      <div class="animais-img-wrapper">
+        <img class="animais-illustration zoomable" src="../img projeto/Guia.png" alt="Guia de animais">
+      </div>
+
+      <div class="animais-img-wrapper">
+        <img class="animais-illustration zoomable" src="../img projeto/Aranhas.png" alt="Aranhas">
+      </div>
+
+      <div class="animais-img-wrapper">
+        <img class="animais-illustration zoomable" src="../img projeto/Cobras.png" alt="Cobras">
+      </div>
+      
+      <div class="animais-img-wrapper">
+        <img class="animais-illustration zoomable" src="../img projeto/Escorpioes.png" alt="Escorpiões">
+      </div>
+    </div>
+
+    <div class="instructions-card" role="region" aria-label="Instruções para animais peçonhentos">
+      <h2>O que fazer</h2>
+      <p>Afaste a vítima do animal e mantenha-a em repouso. Evite esforços e mantenha o membro afetado imóvel. Não faça cortes, torniquetes ou tente sugar o veneno. Lave apenas com água corrente se não houver risco adicional.</p>
+      <p>Procure atendimento médico imediatamente — leve, se possível, uma foto do animal para ajudar na identificação.</p>
+      <div class="actions">
+        <a class="btn btn-call" href="tel:192">Ligar para emergência</a>
+        <a class="btn btn-back" href="../index.html">Voltar</a>
+      </div>
+    </div>
+</div> <!-- /.container -->
+    </main>
+
+  <script src="../script.js"></script>
+
+  <!-- Modal para ampliação de imagens -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgExpanded" alt="Imagem ampliada">
+    <div id="caption"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><small>© Click Salve</small></div>
+  </footer>
+</body>
+</html>

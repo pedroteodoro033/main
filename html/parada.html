@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Parada Cardiorespiratória — Click Salve</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/parada.css">
+  <link rel="stylesheet" href="../styles/animais.css">
+  <style>
+    .hero-img {
+      width: 100%;
+      max-width: 720px;
+      height: auto;
+      display: block;
+      margin: 0.5rem auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      background: #000;
+    }
+
+    .parada-img-wrapper { cursor: pointer; }
+  </style>
+</head>
+<body class="parada-page">
+    <header class="header">
+        <div class="header-item">
+            <img src="../paginas do layout/saude.jpg" alt="Logo Click Salve">
+            <h1>CLIQUE SALVE</h1>
+        </div>
+
+        <div class="header-item">
+            <img src="../paginas do layout/emergencia.png" alt="Ligue Agora">
+            <h1>LIGUE AGORA</h1>
+        </div>
+
+    </header>
+
+  <main>
+    <div class="container">
+      <header class="page-header">
+        <h2>Parada Cardiorespiratória — O que fazer</h2>
+      </header>
+
+      <div class="parada-images">
+        <div class="parada-img-wrapper">
+          <h2>Adultos</h2>
+          <iframe class="hero-img zoomable" width="640" height="360" src="https://www.youtube.com/embed/oQKM0JMVUiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="parada-img-wrapper">
+          <h2>Crianças</h2>
+          <iframe class="hero-img zoomable" width="640" height="360" src="https://www.youtube.com/embed/G0ufDugCR3Y"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Modal padrão (igual ao usado em animais.html) -->
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgExpanded" alt="Imagem ampliada">
+        <div id="caption"></div>
+      </div>
+
+      <section class="instructions-card" role="region" aria-label="Instruções para RCP">
+        <h2>Reconhecimento</h2>
+        <ul>
+          <li>Verifique se a pessoa responde (fale alto e toque nos ombros).</li>
+          <li>Verifique a respiração: aproxime seu rosto do da vítima (5-10 segundos).</li>
+          <li>Se não houver resposta nem respiração, inicie RCP imediatamente.</li>
+        </ul>
+
+        <h2>Reanimação Cardiopulmonar (RCP) — Adultos</h2>
+        <ol>
+          <li>Coloque a vítima em decúbito dorsal (deitada de costas) em superfície firme.</li>
+          <li>Abra as vias aéreas: incline a cabeça para trás e eleve o queixo.</li>
+          <li>Posicione o calcanhar de uma mão no centro do tórax, entre os mamilos.</li>
+          <li>Sobreponha a outra mão e mantenha os braços estendidos.</li>
+          <li><strong>Comprima</strong> o tórax com força e velocidade: 100-120 compressões por minuto.</li>
+          <li>Após 30 compressões, faça 2 respirações de resgate (se treinado).</li>
+          <li>Continue até a chegada do SAMU ou sinais de vida retornarem.</li>
+        </ol>
+
+        <h2>RCP em Crianças</h2>
+        <ul>
+          <li>Use a mesma técnica, mas com força reduzida (apenas 1 mão ou 2 dedos em bebês).</li>
+          <li>Mantenha a taxa de compressão: 100-120 por minuto.</li>
+          <li>Comprima cerca de 1/3 da profundidade do tórax.</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn btn-call" href="tel:192">Ligar para 192</a>
+          <a class="btn btn-back" href="../index.html">Voltar</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><small>© Click Salve</small></div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

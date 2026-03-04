@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Afogamento — Click Salve</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/afogamento.css">
+</head>
+<body class="afogamento-page">
+    <header class="header">
+        <div class="header-item">
+            <img src="../paginas do layout/saude.jpg" alt="Logo Click Salve">
+            <h1>CLIQUE SALVE</h1>
+        </div>
+
+        <div class="header-item">
+            <img src="../paginas do layout/emergencia.png" alt="Ligue Agora">
+            <h1>LIGUE AGORA</h1>
+        </div>
+
+    </header>
+
+  <main>
+    <div class="container">
+      <header class="page-header">
+        <h2>Afogamento — O que fazer</h2>
+      </header>
+
+      <div class="image-block">
+        <img src="../img_afogamento/afogamento.guia.png" alt="Afogamento ilustração" class="hero-img zoomable">
+      </div>
+
+      <section class="instructions-card" role="region" aria-label="Instruções para afogamento">
+        <h2>Passos imediatos</h2>
+        <ol>
+          <li>Retire a pessoa da água com segurança (sem colocar-se em risco).</li>
+          <li>Verifique se a vítima está consciente e respirando.</li>
+          <li>Se a vítima não respira, inicie imediatamente compressões torácicas e ventilação (RCP) se souber como fazer.</li>
+          <li>Afaste água da via aérea e abra as vias aéreas; mantenha a vítima aquecida.</li>
+          <li>Ligue para o SAMU informando localização e condição da vítima.</li>
+        </ol>
+
+        <h2>Observações</h2>
+        <ul>
+          <li>Mesmo que a vítima pareça recuperar-se, procure atendimento médico — complicações podem surgir mais tarde.</li>
+          <li>Se houver suspeita de trauma (queda, pancada), imobilize o pescoço e coluna apenas se você estiver treinado.</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn btn-call" href="tel:192">Ligar para 192</a>
+          <a class="btn btn-back" href="../index.html">Voltar</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><small>© Click Salve</small></div>
+  </footer>
+
+  <!-- include the global script that handles modal image expansion -->
+  <script src="../script.js"></script>
+
+  <!-- Modal comum para ampliar imagens (mesmo usado em animais.html e parada.html) -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgExpanded" alt="Imagem ampliada">
+    <div id="caption"></div>
+  </div>
+</body>
+</html>

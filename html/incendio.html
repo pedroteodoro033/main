@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Incêndio — Click Salve</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/incendio.css">
+</head>
+<body class="incendio-page">
+  <header class="header">
+        <div class="header-item">
+            <img src="../paginas do layout/saude.jpg" alt="Logo Click Salve">
+            <h1>CLIQUE SALVE</h1>
+        </div>
+
+        <div class="header-item">
+            <img src="../paginas do layout/emergencia.png" alt="Ligue Agora">
+            <h1>LIGUE AGORA</h1>
+        </div>
+
+    </header>
+
+  <main>
+    <div class="container">
+      <header class="page-header">
+        <h2>Queimaduras — O que fazer</h2>
+      </header>
+
+      <div class="image-block">
+        <img src="../img_queimadura/queimaduraguia.png" alt="Incêndio" class="hero-img zoomable">
+      </div>
+
+      <section class="instructions-card" role="region" aria-label="Instruções para incêndio">
+        <h2>Passos imediatos</h2>
+        <ol>
+          <li>Mantenha a calma e avalie o ambiente — verifique se há risco de explosão ou desabamento.</li>
+          <li>Afaste pessoas em perigo do local do incêndio, sem se expor ao fogo.</li>
+          <li>Se possível e seguro, use extintor para pequenos focos (A, B ou C conforme rótulo).</li>
+          <li>Feche portas para retardar a propagação do fogo.</li>
+          <li>Ao ligar para o Corpo de Bombeiros (193), informe endereço completo, ponto de referência, tipo de incêndio e número de pessoas envolvidas.</li>
+        </ol>
+
+        <h2>Se houver vítima</h2>
+        <ul>
+          <li>Afaste a vítima do perigo sem colocar-se em risco.</li>
+          <li>Se a pessoa estiver inconsciente e respirando, coloque em posição lateral de segurança.</li>
+          <li>Se não houver respiração, inicie compressões torácicas e peça ajuda imediatamente.</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn btn-call" href="tel:193">Ligar para 193</a>
+          <a class="btn btn-back" href="../index.html">Voltar</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><small>© Click Salve</small></div>
+  </footer>
+
+  <!-- include the global script that handles modal image expansion -->
+  <script src="../script.js"></script>
+
+  <!-- Modal comum para ampliar imagens -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgExpanded" alt="Imagem ampliada">
+    <div id="caption"></div>
+  </div>
+</body>
+</html>
