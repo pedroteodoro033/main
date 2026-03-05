@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			mediaEls = document.querySelectorAll('.animais-illustration, .hero-img, .zoomable');
 		} else {
 			const allMedia = document.querySelectorAll('img, iframe');
-			mediaEls = Array.from(allMedia).filter(el => !el.closest('.header'));
+			mediaEls = Array.from(allMedia).filter(el => !el.closest('.header') && !el.classList.contains('no-zoom'));
 		}
 
 		mediaEls.forEach(el => {
